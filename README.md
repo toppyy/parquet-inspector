@@ -20,7 +20,7 @@ where `parquet-file-path` is a path to a *single* parquet-file (not a folder) an
 
 ## Example
 
-Say you go DuckDB livedemo and create a parquet-file like so
+Use the [DuckDB livedemo](https://shell.duckdb.org/) and create a parquet-file like so
 
     COPY (FROM GENERATE_SERIES(100000)) TO 'row-groups.parquet' (FORMAT PARQUET, CODEC 'UNCOMPRESSED', ROW_GROUP_SIZE 10000);
 
