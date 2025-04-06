@@ -82,6 +82,9 @@ class ParquetReader:
         if dtype == 4:
             return self.br.read_float4
 
+        if dtype == 5:
+            return self.br.read_float8
+
         if dtype == 6:
             return self.read_bytearray
 
